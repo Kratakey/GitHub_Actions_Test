@@ -23,7 +23,5 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew test
-      - name: Allure Report
-        run: ./gradlew allureReport
       - name: Allure Serve
         run: ./gradlew allureServe
