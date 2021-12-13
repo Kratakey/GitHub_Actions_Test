@@ -1,0 +1,21 @@
+[ {
+  "uid" : "f07b6cfbdb70c532",
+  "name" : "Test 2",
+  "time" : {
+    "start" : 1639418946736,
+    "stop" : 1639418952507,
+    "duration" : 5771
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "22816a7e9a9ca76",
+  "name" : "Test 1",
+  "time" : {
+    "start" : 1639418925037,
+    "stop" : 1639418946494,
+    "duration" : 21457
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]

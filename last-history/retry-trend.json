@@ -1,0 +1,9 @@
+[ {
+  "buildOrder" : 8,
+  "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/8/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 2,
+    "retry" : 0
+  }
+} ]

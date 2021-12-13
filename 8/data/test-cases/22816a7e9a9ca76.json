@@ -1,0 +1,228 @@
+{
+  "uid" : "22816a7e9a9ca76",
+  "name" : "Test 1",
+  "fullName" : "smokeTests.PositiveTests.t00000",
+  "historyId" : "c10895caa9e5b2c6d84c6e432d8aa214",
+  "time" : {
+    "start" : 1639418925037,
+    "stop" : 1639418946494,
+    "duration" : 21457
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1639418925133,
+        "stop" : 1639418942935,
+        "duration" : 17802
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1639418943504,
+        "stop" : 1639418944181,
+        "duration" : 677
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click Menu > Sing up",
+      "time" : {
+        "start" : 1639418944702,
+        "stop" : 1639418946036,
+        "duration" : 1334
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"[menu='main-menu'].filter(visible)[0]\") click()",
+        "time" : {
+          "start" : 1639418945006,
+          "stop" : 1639418945283,
+          "duration" : 277
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"[id='main-menu.sign-up']\") scroll into view(false)",
+        "time" : {
+          "start" : 1639418945584,
+          "stop" : 1639418945611,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"[id='main-menu.sign-up']\") get wrapped element()",
+          "time" : {
+            "start" : 1639418945585,
+            "stop" : 1639418945599,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"[id='main-menu.sign-up']\") click()",
+        "time" : {
+          "start" : 1639418945611,
+          "stop" : 1639418945735,
+          "duration" : 124
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1639418946382,
+        "stop" : 1639418946468,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6a4f261ec8557b9",
+      "name" : "Screenshot",
+      "source" : "6a4f261ec8557b9.png",
+      "type" : "image/png",
+      "size" : 34517
+    }, {
+      "uid" : "3198b58cf7f01a1",
+      "name" : "Page source",
+      "source" : "3198b58cf7f01a1.html",
+      "type" : "text/plain",
+      "size" : 110330
+    }, {
+      "uid" : "bac6040132e96bc5",
+      "name" : "Browser console logs",
+      "source" : "bac6040132e96bc5.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "ae1bd22341384e09",
+      "name" : "Video",
+      "source" : "ae1bd22341384e09.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:smokeTests.PositiveTests]/[method:t00000()]"
+  }, {
+    "name" : "feature",
+    "value" : "Feature 1"
+  }, {
+    "name" : "owner",
+    "value" : "EK"
+  }, {
+    "name" : "story",
+    "value" : "Story 1"
+  }, {
+    "name" : "host",
+    "value" : "fv-az28-962"
+  }, {
+    "name" : "thread",
+    "value" : "3236@fv-az28-962.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00000"
+  }, {
+    "name" : "suite",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "owner" : "EK",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "22816a7e9a9ca76.json",
+  "parameterValues" : [ ]
+}

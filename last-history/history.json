@@ -1,0 +1,42 @@
+{
+  "ae5842fafb205aa77b38223afcb2743b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f07b6cfbdb70c532",
+      "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/8//#testresult/f07b6cfbdb70c532",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639418946736,
+        "stop" : 1639418952507,
+        "duration" : 5771
+      }
+    } ]
+  },
+  "c10895caa9e5b2c6d84c6e432d8aa214" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "22816a7e9a9ca76",
+      "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/8//#testresult/22816a7e9a9ca76",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639418925037,
+        "stop" : 1639418946494,
+        "duration" : 21457
+      }
+    } ]
+  }
+}

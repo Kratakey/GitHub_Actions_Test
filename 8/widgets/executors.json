@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://Kratakey.github.io/GitHub_Actions_Test",
+  "buildOrder" : 8,
+  "buildName" : "GitHub Actions Run #1574243259",
+  "buildUrl" : "https://github.com/Kratakey/GitHub_Actions_Test/actions/runs/1574243259",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/8/"
+} ]
