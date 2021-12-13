@@ -23,5 +23,19 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew test
+      - name: Allure Report
+        if: always()
+        run: cp -r $(pwd)/docs/hostory/. $(pwd)/allure/results/history || true && npm run report
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: allure-report
+          path: ./allure-report
       - name: Allure Serve
-        run: ./gradlew ./build/allureServe
+        uses: JamesIves/github-pages-deploy-actions@3.1.0
+        if: always()
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: master
+          FOLDER: allure-report
+          TARGET_FOLDER: docs
