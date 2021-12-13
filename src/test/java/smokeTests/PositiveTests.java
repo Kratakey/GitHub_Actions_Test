@@ -27,4 +27,5 @@ public class PositiveTests extends config.TestBase {
         log.popupSkip();
         sideMenu.clickLogIn();
     }
+
 }
