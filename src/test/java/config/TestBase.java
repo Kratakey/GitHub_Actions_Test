@@ -37,7 +37,7 @@ public class TestBase {
     @BeforeAll
     public static void init() {
         Configuration.browser = config.getBrowserName();
-        if (!config.getRemote().equals("")) {
+        if (!config.getBrowserVersion().equals("")) {
             Configuration.browserVersion = config.getBrowserVersion();
         }
         Configuration.browserSize = config.getBrowserSize();
