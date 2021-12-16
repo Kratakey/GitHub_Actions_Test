@@ -20,18 +20,17 @@ jobs:
           java-version: 11
           distribution: 'adopt'
       - name: Grant execute permission for gradlew
-        run: |
-          chmod +x gradlew
+        run: chmod +x gradlew
+      - name: Install Allure
+        run: sudo apt-get install -y allure
         working-directory: GitHub_Actions_Test
       - name: Create temp folder
-        run: |
-            mkdir output
+        run: mkdir output
       - name: Build with Gradle
         run: ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0  --alluredir=Allure
         working-directory: GitHub_Actions_Test
       - name: Collect Allure files and generate allure-report folder
-        run: |
-          allure generate output/
+        run: allure generate output/
       - name: Publishing Allure artifact to GitHub Actions
         uses: actions/upload-artifact@v2
         with:
