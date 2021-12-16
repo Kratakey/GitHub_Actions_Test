@@ -23,7 +23,3 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0
-      - name: Prepare report
-        uses: Xotabu4/send-to-allure-server-action@1
-        with:
-          allure-server-url: 'http://192.168.1.22:53764/'
