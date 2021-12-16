@@ -22,7 +22,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: |
           chmod +x gradlew
-          sudo apt-get install -y allure
         working-directory: GitHub_Actions_Test
       - name: Create temp folder
         run: |
