@@ -25,6 +25,6 @@ jobs:
         run: ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0
       - name: Prepare report
         uses: Xotabu4/send-to-allure-server-action@1
-        id: ${{always}}
+        id: ${always}
         with:
           allure-server-url: 'http://192.168.1.22:53764/'
