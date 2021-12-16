@@ -8,7 +8,7 @@ jobs:
 
     services:
       selenium:
-        image: selenoid/chrome:latest
+        image: selenoid/chrome:96.0
         ports:
           - 4444:4444
         options: --shm-size="2g"
@@ -22,20 +22,4 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew test
-      - name: Allure Report
-        if: always()
-        run: cp -r $(pwd)/docs/hostory/. $(pwd)/allure/results/history || true && npm run report
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: allure-report
-          path: ./allure-report
-      - name: Allure Serve
-        uses: JamesIves/github-pages-deploy-actions@3.1.0
-        if: always()
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master
-          FOLDER: allure-report
-          TARGET_FOLDER: docs
+        run: ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0
