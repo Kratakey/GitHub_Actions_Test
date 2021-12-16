@@ -3,15 +3,10 @@ name: Selenide Java CI
 on: [ push, workflow_dispatch ]
 
 jobs:
-  integration-tests:
-    runs-on: ubuntu-latest
+  selenium_tests:
 
-    services:
-      selenium:
-        image: selenoid/chrome:96.0
-        ports:
-          - 4444:4444
-        options: --shm-size="2g"
+    runs-on: macos-latest
+
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 11
@@ -19,14 +14,24 @@ jobs:
         with:
           java-version: 11
           distribution: 'adopt'
+      - name: 🔗 Step 2 - Install dependencies
+        run: |
+          brew update
+          brew install allure
+        working-directory: GitHub_Actions_Test
+      - name: 📂 Step 3 - Create a temp artifact folder named `output`
+        run: |
+          mkdir output
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      - name: Build with Gradle
-        run: ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0  --alluredir=Allure
+      - name: 🦊 Step 4 - Run Chrome tests and generate Allure folder inside `output` folder
+        run: |
+          ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0
         working-directory: GitHub_Actions_Test
-      - name: Collect Allure files and generate allure-report folder
-        run: allure generate output/
-      - name: Publishing Allure artifact to GitHub Actions
+      - name: 📊 Step 5 - Collect Allure files and generate allure-report folder
+        run: |
+          allure generate output/
+      - name: 🎁 Step 6 - Publishing Allure artifact to GitHub Actions
         uses: actions/upload-artifact@v2
         with:
           name: allure-report
