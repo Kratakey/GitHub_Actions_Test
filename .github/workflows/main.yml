@@ -24,6 +24,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0
       - name: Build Allure
-        run: docker build . -t allure-gen
+        run: build . -t allure-gen
       - name: Allure Report
-        run: docker run -v ${PWD}:/github/workspace allure-gen allure-results allure-report
+        run: run -v ${PWD}:/github/workspace allure-gen allure-results allure-report
