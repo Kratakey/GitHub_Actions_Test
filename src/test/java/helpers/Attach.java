@@ -46,13 +46,13 @@ public class Attach {
         }
     }
 
-    @Attachment(value = "Video", type = "video/mp4", fileExtension = ".mp4")
+    @Attachment(value = "VIDEO", type = "video/mp4")
     public static byte[] addVideo() {
         File video = new File(getVideoUrl(getSessionId()));
         try {
             return Files.toByteArray(video);
         } catch (IOException e) {
-            log("attachVideoToAllure(): FAILED\n" + e.getMessage());
+            e.printStackTrace();
             return new byte[0];
         }
     }
