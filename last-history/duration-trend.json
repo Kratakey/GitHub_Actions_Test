@@ -1,17 +1,3 @@
 [ {
-  "buildOrder" : 60,
-  "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/60/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 11302
-  }
-}, {
-  "buildOrder" : 59,
-  "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/59/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 12495
-  }
-}, {
   "data" : { }
 } ]
