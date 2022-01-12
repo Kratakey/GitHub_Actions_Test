@@ -54,7 +54,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "/.aerokube/selenoid/video/" + sessionId + ".mp4";
+        String videoUrl = "/opt/selenoid/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
