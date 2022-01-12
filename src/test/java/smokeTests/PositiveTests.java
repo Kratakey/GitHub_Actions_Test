@@ -7,22 +7,9 @@ import org.junit.jupiter.api.Test;
 public class PositiveTests extends config.TestBase {
 
     @Test
-    void t00002() {
-        assert true;
-    }
-
-    @Test
-    void t00003() {
-        assert true;
-    }
-
-    @Test
-    void t00004() {
-        assert true;
-    }
-
-    @Test
-    void t00005() {
-        assert true;
+    void t00001() {
+    log.popupSkip();
+    sideMenu.clickSignUp();
+    log.forceMainPage();
     }
 }
