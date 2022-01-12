@@ -1,0 +1,283 @@
+{
+  "uid" : "93034a495739ffb4",
+  "name" : "t00001()",
+  "fullName" : "smokeTests.PositiveTests.t00001",
+  "historyId" : "ae5842fafb205aa77b38223afcb2743b",
+  "time" : {
+    "start" : 1642024124344,
+    "stop" : 1642024137186,
+    "duration" : 12842
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1642024124450,
+        "stop" : 1642024132771,
+        "duration" : 8321
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1642024133348,
+        "stop" : 1642024133531,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click Menu > Sing up",
+      "time" : {
+        "start" : 1642024134086,
+        "stop" : 1642024135365,
+        "duration" : 1279
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"[menu='main-menu'].filter(visible)[0]\") click()",
+        "time" : {
+          "start" : 1642024134391,
+          "stop" : 1642024134582,
+          "duration" : 191
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"[id='main-menu.sign-up']\") scroll into view(false)",
+        "time" : {
+          "start" : 1642024134883,
+          "stop" : 1642024134928,
+          "duration" : 45
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"[id='main-menu.sign-up']\") get wrapped element()",
+          "time" : {
+            "start" : 1642024134884,
+            "stop" : 1642024134913,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"[id='main-menu.sign-up']\") click()",
+        "time" : {
+          "start" : 1642024134928,
+          "stop" : 1642024135064,
+          "duration" : 136
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"body\") exists()",
+      "time" : {
+        "start" : 1642024135365,
+        "stop" : 1642024135393,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1642024135901,
+        "stop" : 1642024136463,
+        "duration" : 562
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1642024137073,
+        "stop" : 1642024137171,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9680e142d7457c2",
+      "name" : "Screenshot",
+      "source" : "9680e142d7457c2.png",
+      "type" : "image/png",
+      "size" : 230595
+    }, {
+      "uid" : "10238af3f375a78f",
+      "name" : "Page source",
+      "source" : "10238af3f375a78f.html",
+      "type" : "text/plain",
+      "size" : 94454
+    }, {
+      "uid" : "8627485b4687870e",
+      "name" : "Browser console logs",
+      "source" : "8627485b4687870e.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "dc74716fc0539500",
+      "name" : "Video",
+      "source" : "dc74716fc0539500.html",
+      "type" : "text/html",
+      "size" : 187
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:smokeTests.PositiveTests]/[method:t00001()]"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-735"
+  }, {
+    "name" : "thread",
+    "value" : "3311@fv-az74-735.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00001"
+  }, {
+    "name" : "suite",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "1a3e798698f43b40",
+        "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/51//#testresult/1a3e798698f43b40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642023696698,
+          "stop" : 1642023708965,
+          "duration" : 12267
+        }
+      }, {
+        "uid" : "243f9b20ae529a29",
+        "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/47//#testresult/243f9b20ae529a29",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641996643064,
+          "stop" : 1641996649602,
+          "duration" : 6538
+        }
+      }, {
+        "uid" : "1f5f30d1f70d87f3",
+        "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/46//#testresult/1f5f30d1f70d87f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641994481274,
+          "stop" : 1641994486261,
+          "duration" : 4987
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "93034a495739ffb4.json",
+  "parameterValues" : [ ]
+}
