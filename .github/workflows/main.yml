@@ -28,4 +28,4 @@ jobs:
           name: allure-results
           path: build/allure-results
       - name: Allure Serve
-        run: ./gradlew ./build/allureServe
+        run: ./gradlew allureServe
