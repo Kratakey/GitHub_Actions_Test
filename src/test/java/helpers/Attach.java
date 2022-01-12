@@ -2,11 +2,17 @@ package helpers;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.google.common.io.Files;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -39,15 +45,34 @@ public class Attach {
         }
     }
 
-    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
-    public static String addVideo() {
-        return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
-                + getVideoUrl(getSessionId())
-                + "' type='video/mp4'></video></body></html>";
+//    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+//    public static String addVideo() {
+//        return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
+//                + getVideoUrl(getSessionId())
+//                + "' type='video/mp4'></video></body></html>";
+//    }
+
+    public static void addVideo() {
+        try {
+            InputStream is = null;
+            Thread.sleep(1000);
+            for (int i = 0; i < 10; i++) {
+                try {
+                    is = getVideoUrl(getSessionId()).openStream();
+                    i = 10;
+                } catch (FileNotFoundException e) {
+                    Thread.sleep(1000);
+                }
+            }
+            Allure.addAttachment("Video", "video/mp4", is, "mp4");
+        } catch (Exception e) {
+            System.out.println("attachAllureVideo");
+            e.printStackTrace();
+        }
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "https://kratakey.github.io/video/" + sessionId + ".mp4";
+        String videoUrl = "https://127.0.0.1:4444/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
