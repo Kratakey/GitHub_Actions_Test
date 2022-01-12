@@ -29,7 +29,13 @@ public class PositiveTests extends config.TestBase {
     }
 
     @Test
+    @Feature("Feature 1")
+    @Owner("EK")
+    @Story("Story 1")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Test 3")
     void t00002() {
-        assert true;
+        log.popupSkip();
+        sideMenu.clickLogIn();
     }
 }
