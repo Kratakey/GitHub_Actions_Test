@@ -1,0 +1,163 @@
+{
+  "uid" : "61905cb38f9c72c3",
+  "name" : "t00002()",
+  "fullName" : "smokeTests.PositiveTests.t00002",
+  "historyId" : "a2dc72b9c79ab7d5f01d15200ae7e4e8",
+  "time" : {
+    "start" : 1641998748689,
+    "stop" : 1641998761313,
+    "duration" : 12624
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1641998748797,
+        "stop" : 1641998760758,
+        "duration" : 11961
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1641998761213,
+        "stop" : 1641998761301,
+        "duration" : 88
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "366278480c0b99c2",
+      "name" : "Screenshot",
+      "source" : "366278480c0b99c2.png",
+      "type" : "image/png",
+      "size" : 230595
+    }, {
+      "uid" : "c2d44626a555ecf8",
+      "name" : "Page source",
+      "source" : "c2d44626a555ecf8.html",
+      "type" : "text/plain",
+      "size" : 80993
+    }, {
+      "uid" : "7f128b083b68e69a",
+      "name" : "Browser console logs",
+      "source" : "7f128b083b68e69a.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "312c5fc8dcb497c1",
+      "name" : "Video",
+      "source" : "312c5fc8dcb497c1.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:smokeTests.PositiveTests]/[method:t00002()]"
+  }, {
+    "name" : "host",
+    "value" : "fv-az135-192"
+  }, {
+    "name" : "thread",
+    "value" : "3355@fv-az135-192.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00002"
+  }, {
+    "name" : "suite",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "f8d2e1a0f0aee8f0",
+        "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/48//#testresult/f8d2e1a0f0aee8f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641998454712,
+          "stop" : 1641998462469,
+          "duration" : 7757
+        }
+      }, {
+        "uid" : "6056aaeb6166b9cd",
+        "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/47//#testresult/6056aaeb6166b9cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641996649627,
+          "stop" : 1641996656320,
+          "duration" : 6693
+        }
+      }, {
+        "uid" : "fd0b704e8d6dff71",
+        "reportUrl" : "https://Kratakey.github.io/GitHub_Actions_Test/46//#testresult/fd0b704e8d6dff71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641994486269,
+          "stop" : 1641994491068,
+          "duration" : 4799
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "61905cb38f9c72c3.json",
+  "parameterValues" : [ ]
+}
