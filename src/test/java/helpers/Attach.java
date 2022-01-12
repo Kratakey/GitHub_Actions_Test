@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import com.google.common.io.Files;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
+import javafx.scene.media.VideoTrack;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -53,7 +54,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "/video/" + sessionId + ".mp4";
+        String videoUrl = "~/.aerokube/selenoid/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
