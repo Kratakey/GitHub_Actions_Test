@@ -25,5 +25,7 @@ jobs:
         run: ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0
       - uses: actions/upload-artifact@v2
         with:
-          name: all-tests
+          name: allure-results
           path: build/allure-results
+      - name: Run Allure Report
+        run: ./gradlew allureServe
