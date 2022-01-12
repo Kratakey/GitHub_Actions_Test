@@ -7,35 +7,17 @@ import org.junit.jupiter.api.Test;
 public class PositiveTests extends config.TestBase {
 
     @Test
-    @Feature("Feature 1")
-    @Owner("EK")
-    @Story("Story 1")
-    @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Test 1")
-    void t00000() {
-        log.popupSkip();
-        sideMenu.clickSignUp();
-    }
-
-    @Test
-    @Feature("Feature 1")
-    @Owner("EK")
-    @Story("Story 1")
-    @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Test 2")
-    void t00001() {
-        log.popupSkip();
-        sideMenu.clickLogIn();
-    }
-
-    @Test
-    @Feature("Feature 1")
-    @Owner("EK")
-    @Story("Story 1")
-    @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Test 3")
     void t00002() {
-        log.popupSkip();
-        sideMenu.clickLogIn();
+        assert true;
+    }
+
+    @Test
+    void t00003() {
+        assert true;
+    }
+
+    @Test
+    void t00004() {
+        assert true;
     }
 }
