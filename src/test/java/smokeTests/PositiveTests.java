@@ -28,4 +28,8 @@ public class PositiveTests extends config.TestBase {
         sideMenu.clickLogIn();
     }
 
+    @Test
+    void t00002() {
+        assert true;
+    }
 }
