@@ -23,10 +23,6 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew clean test -Denvironment=local_chrome -DbrowserVersion=96.0
-      - uses: actions/upload-artifact@v2
-        with:
-          name: allure-results
-          path: build/allure-results
       - name: Test marketplace action
         uses: simple-elf/allure-report-action@master
         if: always()
