@@ -11,12 +11,14 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static org.apache.commons.compress.harmony.pack200.PackingUtils.log;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
@@ -44,19 +46,23 @@ public class Attach {
         }
     }
 
-    @Attachment(value = "Video", type = "video/mp4", fileExtension = ".html")
-    public static String addVideo() {
-        return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
-                + getVideoUrl(getSessionId())
-                + "' type='video/mp4'></video></body></html>";
+    @Attachment(value = "Video", type = "video/mp4", fileExtension = ".mp4")
+    public static byte[] addVideo() {
+        File video = new File(getVideoUrl(getSessionId()));
+        try {
+            return Files.toByteArray(video);
+        } catch (IOException e) {
+            log("attachVideoToAllure(): FAILED\n" + e.getMessage());
+            return new byte[0];
+        }
     }
 
-    public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "http://127.0.0.1/video/" + sessionId + ".mp4";
+    public static String getVideoUrl(String sessionId) {
+        String videoUrl = "https://kratakey.github.io/video/" + sessionId + ".mp4";
 
         try {
-            return new URL(videoUrl);
-        } catch (MalformedURLException e) {
+            return new String(videoUrl);
+        } catch (RuntimeException e) {
             e.printStackTrace();
         }
         return null;
