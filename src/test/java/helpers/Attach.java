@@ -53,7 +53,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "./video/" + sessionId + ".mp4";
+        String videoUrl = "/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
