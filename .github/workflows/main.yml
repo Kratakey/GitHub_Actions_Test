@@ -62,4 +62,4 @@ jobs:
           authToken: ${{secrets.GITHUB_TOKEN}}
           context: 'Test report'
           state: 'success'
-          target_url: Kratakey.github.io/github-allure-history/${{ github.run_number }}
+          target_url: https://kratakey.github.io/GitHub_Actions_Test/${{ github.run_number }}

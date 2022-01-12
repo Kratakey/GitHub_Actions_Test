@@ -20,4 +20,9 @@ public class PositiveTests extends config.TestBase {
     void t00004() {
         assert true;
     }
+
+    @Test
+    void t00005() {
+        assert true;
+    }
 }
