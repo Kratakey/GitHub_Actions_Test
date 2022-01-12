@@ -1,0 +1,245 @@
+{
+  "uid" : "8547edd8491184a4",
+  "name" : "t00001()",
+  "fullName" : "smokeTests.PositiveTests.t00001",
+  "historyId" : "ae5842fafb205aa77b38223afcb2743b",
+  "time" : {
+    "start" : 1642028016226,
+    "stop" : 1642028028721,
+    "duration" : 12495
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1642028016312,
+        "stop" : 1642028024314,
+        "duration" : 8002
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"ion-alert\") press escape()",
+      "time" : {
+        "start" : 1642028024889,
+        "stop" : 1642028025060,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click Menu > Sing up",
+      "time" : {
+        "start" : 1642028025580,
+        "stop" : 1642028026928,
+        "duration" : 1348
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"[menu='main-menu'].filter(visible)[0]\") click()",
+        "time" : {
+          "start" : 1642028025885,
+          "stop" : 1642028026097,
+          "duration" : 212
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"[id='main-menu.sign-up']\") scroll into view(false)",
+        "time" : {
+          "start" : 1642028026397,
+          "stop" : 1642028026427,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"[id='main-menu.sign-up']\") get wrapped element()",
+          "time" : {
+            "start" : 1642028026399,
+            "stop" : 1642028026416,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"[id='main-menu.sign-up']\") click()",
+        "time" : {
+          "start" : 1642028026427,
+          "stop" : 1642028026627,
+          "duration" : 200
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "$(\"body\") exists()",
+      "time" : {
+        "start" : 1642028026928,
+        "stop" : 1642028026943,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1642028027451,
+        "stop" : 1642028028130,
+        "duration" : 679
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1642028028603,
+        "stop" : 1642028028709,
+        "duration" : 106
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "7183ffa6ae56fb5c",
+      "name" : "Screenshot",
+      "source" : "7183ffa6ae56fb5c.png",
+      "type" : "image/png",
+      "size" : 235604
+    }, {
+      "uid" : "eed89e78b6c7d4be",
+      "name" : "Page source",
+      "source" : "eed89e78b6c7d4be.html",
+      "type" : "text/plain",
+      "size" : 94454
+    }, {
+      "uid" : "4ecac42dbf28e5e0",
+      "name" : "Browser console logs",
+      "source" : "4ecac42dbf28e5e0.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "f7a0698525c68db5",
+      "name" : "Video",
+      "source" : "f7a0698525c68db5.html",
+      "type" : "text/html",
+      "size" : 177
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:smokeTests.PositiveTests]/[method:t00001()]"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-735"
+  }, {
+    "name" : "thread",
+    "value" : "3274@fv-az74-735.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00001"
+  }, {
+    "name" : "suite",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8547edd8491184a4.json",
+  "parameterValues" : [ ]
+}
