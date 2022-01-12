@@ -72,7 +72,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "https://127.0.0.1:4444/video/" + sessionId + ".mp4";
+        String videoUrl = "https://kratakey.github.io//video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
