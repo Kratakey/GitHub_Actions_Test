@@ -1,0 +1,52 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Feature 1",
+    "children" : [ {
+      "name" : "Story 1",
+      "children" : [ {
+        "name" : "Test 1",
+        "uid" : "8d26e971bb12b02d",
+        "parentUid" : "348489fb7a95f89b2d49dfeeefb4b379",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641994465825,
+          "stop" : 1641994481151,
+          "duration" : 15326
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test 2",
+        "uid" : "1f5f30d1f70d87f3",
+        "parentUid" : "348489fb7a95f89b2d49dfeeefb4b379",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641994481274,
+          "stop" : 1641994486261,
+          "duration" : 4987
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test 3",
+        "uid" : "fd0b704e8d6dff71",
+        "parentUid" : "348489fb7a95f89b2d49dfeeefb4b379",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641994486269,
+          "stop" : 1641994491068,
+          "duration" : 4799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "348489fb7a95f89b2d49dfeeefb4b379"
+    } ],
+    "uid" : "def7b0909c901de5b29f6e129b2d8fcd"
+  } ],
+  "name" : "behaviors"
+}

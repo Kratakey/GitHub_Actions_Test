@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jan 12 13:34:25 GMT 2022","Wed Jan 12 13:34:41 GMT 2022","15326","","smokeTests.PositiveTests","","smokeTests.PositiveTests","t00000","Test 1",""
+"passed","Wed Jan 12 13:34:41 GMT 2022","Wed Jan 12 13:34:46 GMT 2022","4987","","smokeTests.PositiveTests","","smokeTests.PositiveTests","t00001","Test 2",""
+"passed","Wed Jan 12 13:34:46 GMT 2022","Wed Jan 12 13:34:51 GMT 2022","4799","","smokeTests.PositiveTests","","smokeTests.PositiveTests","t00002","Test 3",""

@@ -1,0 +1,48 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "smokeTests.PositiveTests",
+    "children" : [ {
+      "name" : "Test 1",
+      "uid" : "8d26e971bb12b02d",
+      "parentUid" : "4cc7cbb7b93e40391126e5468cdfa9f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641994465825,
+        "stop" : 1641994481151,
+        "duration" : 15326
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test 2",
+      "uid" : "1f5f30d1f70d87f3",
+      "parentUid" : "4cc7cbb7b93e40391126e5468cdfa9f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641994481274,
+        "stop" : 1641994486261,
+        "duration" : 4987
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test 3",
+      "uid" : "fd0b704e8d6dff71",
+      "parentUid" : "4cc7cbb7b93e40391126e5468cdfa9f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641994486269,
+        "stop" : 1641994491068,
+        "duration" : 4799
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4cc7cbb7b93e40391126e5468cdfa9f2"
+  } ],
+  "name" : "suites"
+}
