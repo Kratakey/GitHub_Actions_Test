@@ -45,23 +45,19 @@ public class Attach {
         }
     }
 
-    @Attachment(value = "Video", type = "video/mp4")
-    public static byte[] addVideo() {
-        File video = new File(getVideoUrl(getSessionId()));
-        try {
-            return Files.toByteArray(video);
-        } catch (IOException e) {
-            e.printStackTrace();
-            return new byte[0];
-        }
+    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+    public static String addVideo() {
+        return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
+                + getVideoUrl(getSessionId())
+                + "' type='video/mp4'></video></body></html>";
     }
 
-    public static String getVideoUrl(String sessionId) {
-        String videoUrl = "http://127.0.0.1:4444/video/" + sessionId + ".mp4";
+    public static URL getVideoUrl(String sessionId) {
+        String videoUrl = "./video/" + sessionId + ".mp4";
 
         try {
-            return new String(videoUrl);
-        } catch (RuntimeException e) {
+            return new URL(videoUrl);
+        } catch (MalformedURLException e) {
             e.printStackTrace();
         }
         return null;
