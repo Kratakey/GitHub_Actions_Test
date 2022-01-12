@@ -45,30 +45,11 @@ public class Attach {
         }
     }
 
-//    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
-//    public static String addVideo() {
-//        return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
-//                + getVideoUrl(getSessionId())
-//                + "' type='video/mp4'></video></body></html>";
-//    }
-
-    public static void addVideo() {
-        try {
-            InputStream is = null;
-            Thread.sleep(1000);
-            for (int i = 0; i < 10; i++) {
-                try {
-                    is = getVideoUrl(getSessionId()).openStream();
-                    i = 10;
-                } catch (FileNotFoundException e) {
-                    Thread.sleep(1000);
-                }
-            }
-            Allure.addAttachment("Video", "video/mp4", is, "mp4");
-        } catch (Exception e) {
-            System.out.println("attachAllureVideo");
-            e.printStackTrace();
-        }
+    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+    public static String addVideo() {
+        return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
+                + getVideoUrl(getSessionId())
+                + "' type='video/mp4'></video></body></html>";
     }
 
     public static URL getVideoUrl(String sessionId) {
