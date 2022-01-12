@@ -45,7 +45,7 @@ public class Attach {
         }
     }
 
-    @Attachment(value = "VIDEO", type = "video/mp4")
+    @Attachment(value = "Video", type = "video/mp4")
     public static byte[] addVideo() {
         File video = new File(getVideoUrl(getSessionId()));
         try {
@@ -57,7 +57,7 @@ public class Attach {
     }
 
     public static String getVideoUrl(String sessionId) {
-        String videoUrl = "https://kratakey.github.io/video/" + sessionId + ".mp4";
+        String videoUrl = "http://127.0.0.1:4444/video/" + sessionId + ".mp4";
 
         try {
             return new String(videoUrl);
