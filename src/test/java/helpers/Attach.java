@@ -5,7 +5,6 @@ import com.codeborne.selenide.Selenide;
 import com.google.common.io.Files;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -53,7 +52,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "https://kratakey.github.io/video/" + sessionId + ".mp4";
+        String videoUrl = "http://127.0.0.1/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
