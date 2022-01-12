@@ -1,0 +1,125 @@
+{
+  "uid" : "23c32fa29870dfcc",
+  "name" : "t00004()",
+  "fullName" : "smokeTests.PositiveTests.t00004",
+  "historyId" : "57fecc6ef47e533e8aaad946099ef0ee",
+  "time" : {
+    "start" : 1641998465859,
+    "stop" : 1641998468676,
+    "duration" : 2817
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://app.maxibooking.ru/",
+      "time" : {
+        "start" : 1641998465860,
+        "stop" : 1641998468217,
+        "duration" : 2357
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"webdriver\") close()",
+      "time" : {
+        "start" : 1641998468595,
+        "stop" : 1641998468676,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9940719ff97cdc7d",
+      "name" : "Screenshot",
+      "source" : "9940719ff97cdc7d.png",
+      "type" : "image/png",
+      "size" : 230595
+    }, {
+      "uid" : "2d51c11d9f096b6b",
+      "name" : "Page source",
+      "source" : "2d51c11d9f096b6b.html",
+      "type" : "text/plain",
+      "size" : 80993
+    }, {
+      "uid" : "a4fd3a136fbb4916",
+      "name" : "Browser console logs",
+      "source" : "a4fd3a136fbb4916.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "c60b1abc9f5c3dcb",
+      "name" : "Video",
+      "source" : "c60b1abc9f5c3dcb.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:smokeTests.PositiveTests]/[method:t00004()]"
+  }, {
+    "name" : "host",
+    "value" : "fv-az28-122"
+  }, {
+    "name" : "thread",
+    "value" : "3264@fv-az28-122.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testClass",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "t00004"
+  }, {
+    "name" : "suite",
+    "value" : "smokeTests.PositiveTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "23c32fa29870dfcc.json",
+  "parameterValues" : [ ]
+}
