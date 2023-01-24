@@ -55,11 +55,3 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
-      - name: Post the link to the report
-        if: always()
-        uses: Sibz/github-status-action@v1
-        with:
-          authToken: ${{secrets.GITHUB_TOKEN}}
-          context: 'Test report'
-          state: 'success'
-          target_url: https://kratakey.github.io/GitHub_Actions_Test/${{ github.run_number }}
