@@ -57,7 +57,7 @@ jobs:
           PUBLISH_DIR: allure-history
       - name: Post the link to the report
         if: always()
-        uses: Sibz/github-status-action@v1
+        uses: Sibz/github-status-action@v3
         with:
           authToken: ${{secrets.GITHUB_TOKEN}}
           context: 'Test report'
